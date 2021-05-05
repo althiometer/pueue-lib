@@ -3,7 +3,7 @@
 pub mod linux;
 /// MacOs specific stuff
 #[cfg(target_vendor = "apple")]
-pub mod macos;
+pub mod apple;
 /// Windows specific stuff
 #[cfg(target_os = "windows")]
 pub mod windows;
@@ -13,7 +13,7 @@ pub mod windows;
 pub use self::linux::directories;
 
 #[cfg(target_vendor = "apple")]
-pub use self::macos::directories;
+pub use self::apple::directories;
 
 #[cfg(target_os = "windows")]
 pub use self::windows::directories;
