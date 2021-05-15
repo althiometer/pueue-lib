@@ -10,3 +10,4 @@
 
 # Ignore Cargo.lock, since this is a library
 Cargo.lock
+.DS_Store
